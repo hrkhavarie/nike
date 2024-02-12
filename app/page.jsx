@@ -5,14 +5,15 @@ import Nav from './components/Nav'
 import HeroProvider from './constants/HeroContexts'
 
 export default function Home() {
+  
   return (
     <main className='relative'>
 
       <Nav/>
 
-      <section className='xl:padding-1 wide:padding-r padding-b'>
+      <section className='xl:padding-l wide:padding-r padding-b'>
         <HeroProvider>
-          <Hero / >
+          <Hero />
         </HeroProvider>
       </section>
       <section className='padding'>
@@ -36,8 +37,6 @@ export default function Home() {
       <section className='padding bg-black padding-x pb-8'>
         <Footer/>
         </section>
-      
-      
     </main>
   )
 }
